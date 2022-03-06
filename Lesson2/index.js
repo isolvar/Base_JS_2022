@@ -120,5 +120,3 @@ console.log(!!myVar3);
  // null == undefined -> true
 
  console.log(!!null)
-
- 
