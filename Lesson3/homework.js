@@ -441,7 +441,7 @@ const days = [
 
 for (let day of days) {
     if (day === "суббота" || day === "воскресенье") {
-        console.log("6.", day.toUpperCase());
+        console.log("6.", day.toUpperCase()); // console.log(day.bold())
         continue;
     }
     console.log("6.", day);
@@ -454,7 +454,7 @@ console.log();
 let currentDay = "суббота";
 for (let day of days) {
     if (day === currentDay) {
-        console.log("7.", day.toUpperCase());
+        console.log("7.", day.toUpperCase()); // console.log(day.italic())
         continue;
     }
     console.log("7.", day);
