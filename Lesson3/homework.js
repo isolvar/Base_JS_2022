@@ -454,7 +454,7 @@ console.log();
 let currentDay = "суббота";
 for (let day of days) {
     if (day === currentDay) {
-        console.log("7.", day.toUpperCase()); // console.log(day.italic())
+        console.log("7.", day.toUpperCase()); // console.log(day.italics())
         continue;
     }
     console.log("7.", day);
