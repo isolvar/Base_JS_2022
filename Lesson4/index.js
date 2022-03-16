@@ -181,7 +181,7 @@ const isPolindrom = (word) => {
     if (word.length % 2 === 0) {
         halfLength = word.length / 2;
     } else {
-        halfLength = (word.length + 1) / 2;
+        halfLength = (word.length - 1) / 2;
     }
 
     for (let i = 0; i <= halfLength; i++) {
