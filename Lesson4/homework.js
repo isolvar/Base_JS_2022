@@ -135,6 +135,13 @@ function getDivisors(num) {
 
 //15. Дано число. Сложите его цифры. Если сумма получилась более 9-ти, опять
 //сложите его цифры. И так, пока сумма не станет однозначным числом (9 и менее).
+// function getDigitsSum(num) {
+//     const str = num.toString();
+//     let sum = 0;
+//     for (let i = 0; i < str.length; i++) sum += +str[i];
+//     return sum;
+// }
+
 function sumNumbers(num) {
     const sum = getDigitsSum(num);
 
@@ -150,3 +157,25 @@ function sumNumbers(num) {
 //16. Напишите стрелочную функцию, которая будет возвращать true если строка
 //является палиндромом и false в противном случае.
 // решена в файле index.js
+const polindrom = "aдоcодa";
+
+const isPolindrom = (word) => {
+    let halfLength = 0;
+
+    if (word.length % 2 === 0) {
+        halfLength = word.length / 2;
+    } else {
+        halfLength = (word.length - 1) / 2;
+    }
+
+    for (let i = 0; i <= halfLength; i++) {
+        if (word[i] !== word[word.length - i - 1]) return false;
+    }
+    return true;
+};
+console.log(isPolindrom(polindrom));
+
+// const isPolindrom = (word) => {
+//     word = word.toLowerCase();
+//     return word === word.split("").reverse().join("");
+// };
