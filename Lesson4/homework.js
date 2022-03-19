@@ -145,7 +145,7 @@ function sumNumbers(num) {
     return tmpStr + sumNumbers(sum);
 }
 
-console.log(sumNumbers(298));
+// console.log(sumNumbers(298));
 
 //16. Напишите стрелочную функцию, которая будет возвращать true если строка
 //является палиндромом и false в противном случае.
