@@ -24,8 +24,16 @@ function log(...param) {
 //         return true;
 //     });
 // };
-
 // log(removeRepeatedValues([-1, 2, 5, -9, 5, 7, 4, 7]));
+
+// const getUniqueElements = (arr) => {
+//     const result = [];
+//     arr.forEach((elem) => {
+//         if (!result.includes(elem)) result.push(elem);
+//     });
+//     return result;
+// };
+// log(getUniqueElements([-1, 2, 5, -9, 5, 7, 4, 7]));
 
 // Написать функцию  которая будет принимать два массива, и будет сравнивать
 // их, если они идентичны (элементы совпадают по значению и по индексу) то
@@ -37,6 +45,8 @@ function log(...param) {
 //     }
 //     return true;
 // };
+
+// также можно сделать через array.every
 
 // const myArr1 = [1, 0, 1];
 // const myArr2 = [1, 0, 1];
