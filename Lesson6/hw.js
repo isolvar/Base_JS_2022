@@ -184,7 +184,7 @@ function log(...param) {
 // в массив цифр расположенных по убыванию их значений.
 // const numbers = [2, 3, 5, 7, 0, 13, 4, -6];
 
-// const sortedArr = [...numbers].sort((a, b) => {
+// const sortedArr = [...numbers].sort((a, b) => { //.sort((a, b) => b - a)
 //     if (a < b) return 1;
 //     if (a > b) return -1;
 //     return 0;
@@ -218,6 +218,7 @@ function log(...param) {
 //     }, 0);
 // };
 // log(getSum(myArr));
+// если известна вложенность то можно сделать с методом Array.flat()
 
 //9. Дан массив с числами. Не используя метода reverse переверните
 // его элементы в обратном порядке.
