@@ -2,13 +2,13 @@ function log(...param) {
     console.log(...param);
 }
 
-// practice 1
+// PRACTICE 1
 // Написать функцию, которая будет принимать массив чисел, содержащий целые
 // положительные и целые отрицательные числа, в качестве результата возвращать
 // сумму четных положительных элементов переданного массива.
 // const sumOfPositiveNumbers = (arr) => {
 //     return arr.reduce((accum, current) => {
-//         if (current > 0) return accum + current;
+//         if (current > 0 && current % 2 === 0) return accum + current;
 //         return accum;
 //     }, 0);
 // };
