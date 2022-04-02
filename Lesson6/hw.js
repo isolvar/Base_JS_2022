@@ -109,7 +109,7 @@ function log(...param) {
 //1. Используя метод map() напишите код, который получает из
 // массива строк новый массив, содержащий их длины.
 // const myArr = ["fff", "s", "rxc cvj"];
-// const strLengths = [...myArr].map((elem) => elem.length);
+// const strLengths = myArr.map((elem) => elem.length);
 // log(myArr);
 // log(strLengths);
 
@@ -121,7 +121,13 @@ function log(...param) {
 // const numbers = [2, 3, 5, 7, 11, 13, 17, 19];
 
 // const currentSums = (numbers) => {
-//     return numbers.reduce((acc, cur) => acc + cur);
+//     const res = [];
+//     const totalSum = numbers.reduce((accum, currentEl) => {
+//         res.push(accum);
+//         return accum + currentEl;
+//     });
+//     res.push(totalSum);
+//     return res;
 // };
 // log(currentSums(numbers));
 
@@ -166,14 +172,15 @@ function log(...param) {
 
 //6. Напишите код, преобразующий массив цифр, которые располагаются неупорядоченно,
 // в массив цифр расположенных по убыванию их значений.
-// const numbers = [2, 3, 5, 7, 0, 13, 4, -6];
+const numbers = [2, 3, 5, 7, 0, 13, 4, -6];
 
-// const sortedArr = [...numbers].sort((a, b) => {
-//     if (a < b) return 1;
-//     if (a > b) return -1;
-//     return 0;
-// });
-// log(sortedArr);
+const sortedArr = [...numbers].sort((a, b) => {
+    if (a < b) return 1;
+    if (a > b) return -1;
+    return 0;
+});
+log(numbers);
+log(sortedArr);
 
 //7. Напишите код, объединяющий три массива цифр, и располагающий цифры,
 // в полученном массиве, в порядке убывания их значений через пробел.
@@ -233,11 +240,11 @@ function log(...param) {
 // а вторым - сколько элементов должно быть в массиве. Пример: arrayFill('x', 5)
 // сделает массив ['x', 'x', 'x', 'x', 'x'].
 
-const arrayFill = (filler, qty) => {
-    const result = [];
-    for (let i = 0; i < qty; i++) {
-        result.push(filler);
-    }
-    return result;
-};
-log(arrayFill("x", 5));
+// const arrayFill = (filler, qty) => {
+//     const result = [];
+//     for (let i = 0; i < qty; i++) {
+//         result.push(filler);
+//     }
+//     return result;
+// };
+// log(arrayFill("x", 5));
