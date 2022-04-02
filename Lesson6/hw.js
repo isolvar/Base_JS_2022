@@ -172,15 +172,15 @@ function log(...param) {
 
 //6. Напишите код, преобразующий массив цифр, которые располагаются неупорядоченно,
 // в массив цифр расположенных по убыванию их значений.
-const numbers = [2, 3, 5, 7, 0, 13, 4, -6];
+// const numbers = [2, 3, 5, 7, 0, 13, 4, -6];
 
-const sortedArr = [...numbers].sort((a, b) => {
-    if (a < b) return 1;
-    if (a > b) return -1;
-    return 0;
-});
-log(numbers);
-log(sortedArr);
+// const sortedArr = [...numbers].sort((a, b) => {
+//     if (a < b) return 1;
+//     if (a > b) return -1;
+//     return 0;
+// });
+// log(numbers);
+// log(sortedArr);
 
 //7. Напишите код, объединяющий три массива цифр, и располагающий цифры,
 // в полученном массиве, в порядке убывания их значений через пробел.
