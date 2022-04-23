@@ -172,7 +172,7 @@ class Validator {
     }
 
     static isDate(str) {
-        // VARIANT 2
+        // Validate dd/mm/yyyy or dd-mm-yyyy format
         // changed example from https://www.w3resource.com/javascript/form/javascript-date-validation.php
 
         const regexDateFormat =
